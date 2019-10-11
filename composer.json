@@ -1,0 +1,11 @@
+{
+    "name": "viktor/project1",
+    "description": "Brain games. First project on hexlet in PHP proffession. Started 11.10.2019. vitek.mo@gmail.com",
+    "authors": [
+        {
+            "name": "Viktor Moisseyenko",
+            "email": "vitek.mo@gmail.com"
+        }
+    ],
+    "require": {}
+}
