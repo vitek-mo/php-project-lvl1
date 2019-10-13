@@ -8,5 +8,12 @@
             "email": "vitek.mo@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+	    "files": [
+		   "src/cli.php"
+	    ]		    
+    },
+    "require": {
+	    "wp-cli/php-cli-tools": "*"
+    }
 }
