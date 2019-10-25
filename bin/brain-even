@@ -1,8 +1,7 @@
 #!/usr/bin/php
 <?php
 namespace BrainGames\Even;
-//next line commented because of error to get required file after global install. It suppose to use cli.php, which not required for the moment.
-//require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 use function cli\line;
 use function cli\prompt;
 line("Welcome to the Brain Games!");
