@@ -8,3 +8,5 @@
 
 <img src="https://travis-ci.org/vitek-mo/php-project-lvl1.svg?branch=master" />
 
+<script id="asciicast-WugOisp8F9RU75oRvaxrpbjy1" src="https://asciinema.org/a/WugOisp8F9RU75oRvaxrpbjy1.js" async></script>
+
