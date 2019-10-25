@@ -7,4 +7,4 @@
 <a href="https://codeclimate.com/github/vitek-mo/php-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/4183019995f4d16ee7f0/test_coverage" /></a>
 
 <img src="https://travis-ci.org/vitek-mo/php-project-lvl1.svg?branch=master" />
-<a href="https://asciinema.org/a/14"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+<a href="https://asciinema.org/a/WugOisp8F9RU75oRvaxrpbjy1" target="_blank"><img src="https://asciinema.org/a/WugOisp8F9RU75oRvaxrpbjy1.svg" /></a>
