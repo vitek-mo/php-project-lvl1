@@ -8,3 +8,4 @@
 
 <img src="https://travis-ci.org/vitek-mo/php-project-lvl1.svg?branch=master" />
 <a href="https://asciinema.org/a/WugOisp8F9RU75oRvaxrpbjy1" target="_blank"><img src="https://asciinema.org/a/WugOisp8F9RU75oRvaxrpbjy1.svg" /></a>
+<a href="https://asciinema.org/a/Pr9LPp7nrSqM7EKN6a8hpZxjc" target="_blank"><img src="https://asciinema.org/a/Pr9LPp7nrSqM7EKN6a8hpZxjc.svg" /></a>
