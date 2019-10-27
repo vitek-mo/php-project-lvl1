@@ -1,6 +1,6 @@
 {
     "name": "viktor/php-project-lvl1",
-    "bin": ["bin/brain-games", "bin/brain-even"],
+    "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc"],
     "description": "Brain games. First project on hexlet in PHP proffession. Started 11.10.2019. vitek.mo@gmail.com",
     "scripts": {
 	"phpcs": "phpcs",
