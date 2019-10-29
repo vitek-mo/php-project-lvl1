@@ -15,5 +15,5 @@
 
 <a href="https://asciinema.org/a/WT1tyz60zuBDjwtTZHqgnKAgX" target="_blank"><img src="https://asciinema.org/a/WT1tyz60zuBDjwtTZHqgnKAgX.svg" /></a>
 
-Brain prime.
+<b>Brain prime.</b>
 <a href="https://asciinema.org/a/kkytHLpj4czeZzCWQtaxRuM8Z" target="_blank"><img src="https://asciinema.org/a/kkytHLpj4czeZzCWQtaxRuM8Z.svg" /></a>
