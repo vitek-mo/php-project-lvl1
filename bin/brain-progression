@@ -12,11 +12,20 @@ $name = prompt('May i have your name?');
 line("Hello, %s!", $name);
 $requiredCorrectAnswers = 3;
 
-$question = getQuestion();
-line("Question: {$question}");
-$userAnswer = prompt("What number is missing? ");
-$correctAnswer = getCorrectAnswer($question);
-line($correctAnswer);
+for ($i = 1; $i <= $requiredCorrectAnswers; $i++) {
+	$question = getQuestion();
+	line("Question: {$question}");
+	$userAnswer = prompt("Your answer: ");
+	$correctAnswer = getCorrectAnswer($question);
+	if ($userAnswer === $correctAnswer) {
+		line("Correct!");
+	} else {
+		line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+		line("Let's try again, {$name}!");
+		return;
+	}
+}
+line("Congratulations, {$name}!");
 
 
 function getQuestion()
