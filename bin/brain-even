@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-namespace BrainGames\Even;
+namespace BrainGames\BrainEven;
 require __DIR__ . '/../vendor/autoload.php';
 use function cli\line;
 use function cli\prompt;

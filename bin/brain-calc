@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-namespace BrainGames\Calc;
+namespace BrainGames\BrainCalc;
 require __DIR__ . '/../vendor/autoload.php';
 
 use function cli\line;
