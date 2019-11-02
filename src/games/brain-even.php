@@ -1,4 +1,5 @@
 <?php
+
 namespace BrainGames\Games\BrainEven;
 
 use function BrainGames\Engine\runEngine;
@@ -10,15 +11,15 @@ const MAX_VALUE = 150;
 
 function run()
 {
-	runEngine(BRAIN_EVEN_RULES, generateTask(getRoundsQty()));
+    runEngine(BRAIN_EVEN_RULES, generateTask(getRoundsQty()));
 }
 
 function generateTask($roundsQty)
 {
-	for ($i = 1; $i <= $roundsQty; $i++) {
-		$question = rand(MIN_VALUE, MAX_VALUE);
-		$answer = ($question % 2 === 0)?"yes":"no";
-		$entireTask[] = [$question,$answer];
-	}
-	return $entireTask;
+    for ($i = 1; $i <= $roundsQty; $i++) {
+        $question = rand(MIN_VALUE, MAX_VALUE);
+        $answer = ($question % 2 === 0) ? "yes" : "no";
+        $entireTask[] = [$question,$answer];
+    }
+    return $entireTask;
 }

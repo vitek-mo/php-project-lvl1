@@ -1,4 +1,5 @@
 <?php
+
 namespace BrainGames\Games\BrainProgression;
 
 use function BrainGames\Engine\runEngine;
@@ -15,24 +16,24 @@ const PROGRESSION_LENGTH = 10;
 
 function run()
 {
-	runEngine(BRAIN_PROGRESSION_RULES, generateTask(getRoundsQty()));
+    runEngine(BRAIN_PROGRESSION_RULES, generateTask(getRoundsQty()));
 }
 
 function generateTask($roundsQty)
 {
-	for ($i = 1; $i <= $roundsQty; $i++) {
-		$progressionStart = rand(RAND_START,RAND_MAX);
-		$step = rand(RAND_STEP_MIN,RAND_STEP_MAX);
-		$hiddenIndex = rand(1, PROGRESSION_LENGTH);
-		$question ="";
-		
-		for ($j = 1; $j <= 10; $j++) {
-			$question = $question . ($j === $hiddenIndex?" ..":" " . strval($progressionStart + $step * ($j - 1)));
-			if ($j === $hiddenIndex) {
-				$answer = strval($progressionStart + $step * ($j - 1));
-			}
-		}
-		$entireTask[] = [$question,$answer];
-	}
-	return $entireTask;
+    for ($i = 1; $i <= $roundsQty; $i++) {
+        $progressionStart = rand(RAND_START, RAND_MAX);
+        $step = rand(RAND_STEP_MIN, RAND_STEP_MAX);
+        $hiddenIndex = rand(1, PROGRESSION_LENGTH);
+        $question = "";
+        
+        for ($j = 1; $j <= 10; $j++) {
+            $question = $question . ($j === $hiddenIndex ? " .." : " " . strval($progressionStart + $step * ($j - 1)));
+            if ($j === $hiddenIndex) {
+                $answer = strval($progressionStart + $step * ($j - 1));
+            }
+        }
+        $entireTask[] = [$question,$answer];
+    }
+    return $entireTask;
 }

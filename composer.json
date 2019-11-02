@@ -18,7 +18,6 @@
     },
     "autoload": {
 	    "files": [
-		   "src/cli.php",
 		   "src/games/brain-even.php",
 		   "src/engine.php",
 		   "src/games/brain-prime.php",
