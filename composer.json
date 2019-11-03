@@ -1,6 +1,6 @@
 {
     "name": "viktor/php-project-lvl1",
-    "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc","bin/brain-gcd","bin/brain-progression","bin/brain-prime"],
+    "bin": ["bin/brain-even", "bin/brain-calc","bin/brain-gcd","bin/brain-progression","bin/brain-prime"],
     "description": "Brain games. First project on hexlet in PHP proffession. Started 11.10.2019. vitek.mo@gmail.com",
     "type": "library",
     "keywords": ["game", "logic", "hexlet", "php", "travis", "codeclimate"],
