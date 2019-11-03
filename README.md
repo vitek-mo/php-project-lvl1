@@ -9,11 +9,9 @@
 <img src="https://travis-ci.org/vitek-mo/php-project-lvl1.svg?branch=master" />
 <a href="https://asciinema.org/a/WugOisp8F9RU75oRvaxrpbjy1" target="_blank"><img src="https://asciinema.org/a/WugOisp8F9RU75oRvaxrpbjy1.svg" /></a>
 
-<a href="https://asciinema.org/a/Pr9LPp7nrSqM7EKN6a8hpZxjc" target="_blank"><img src="https://asciinema.org/a/Pr9LPp7nrSqM7EKN6a8hpZxjc.svg" /></a>
+<b> Brain-games installation and game process. </b>
+<a href="https://asciinema.org/a/SilcFXbKVr8hFfEJgA3jyhVj3" target="_blank"><img src="https://asciinema.org/a/SilcFXbKVr8hFfEJgA3jyhVj3.svg" /></a>
 
-<a href="https://asciinema.org/a/vhnio9AZwG0SlGpcU5ggmFSwv" target="_blank"><img src="https://asciinema.org/a/vhnio9AZwG0SlGpcU5ggmFSwv.svg" /></a>
+[![asciicast](https://asciinema.org/a/SilcFXbKVr8hFfEJgA3jyhVj3.svg)](https://asciinema.org/a/SilcFXbKVr8hFfEJgA3jyhVj3)
 
-<a href="https://asciinema.org/a/WT1tyz60zuBDjwtTZHqgnKAgX" target="_blank"><img src="https://asciinema.org/a/WT1tyz60zuBDjwtTZHqgnKAgX.svg" /></a>
-
-<b>Brain prime.</b>
-<a href="https://asciinema.org/a/kkytHLpj4czeZzCWQtaxRuM8Z" target="_blank"><img src="https://asciinema.org/a/kkytHLpj4czeZzCWQtaxRuM8Z.svg" /></a>
+<script id="asciicast-SilcFXbKVr8hFfEJgA3jyhVj3" src="https://asciinema.org/a/SilcFXbKVr8hFfEJgA3jyhVj3.js" async></script>
