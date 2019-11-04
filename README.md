@@ -7,7 +7,6 @@
 <a href="https://codeclimate.com/github/vitek-mo/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/4183019995f4d16ee7f0/maintainability" /></a>
 <a href="https://codeclimate.com/github/vitek-mo/php-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/4183019995f4d16ee7f0/test_coverage" /></a>
 
-//<img src="https://travis-ci.org/vitek-mo/php-project-lvl1.svg?branch=master" />
 [![Build Status](https://travis-ci.org/vitek-mo/php-project-lvl1.svg?branch=master)](https://travis-ci.org/vitek-mo/php-project-lvl1)
 
 <b> Brain-games installation and game process. </b>
