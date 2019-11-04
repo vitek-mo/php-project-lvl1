@@ -3,6 +3,7 @@
 namespace BrainGames\Games\BrainGcd;
 
 use function BrainGames\Engine\runEngine;
+
 use const BrainGames\Engine\ROUNDS_QTY;
 
 const BRAIN_GCD_RULES = "Find the greatest common divisor of given numbers.";

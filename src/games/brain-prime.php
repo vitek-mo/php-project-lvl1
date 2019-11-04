@@ -3,6 +3,7 @@
 namespace BrainGames\Games\BrainPrime;
 
 use function BrainGames\Engine\runEngine;
+
 use const BrainGames\Engine\ROUNDS_QTY;
 
 const BRAIN_PRIME_RULES = "Answer \"yes\" if geven number is prime. Otherwise answer \"no\".";
@@ -34,6 +35,6 @@ function isPrime($number): bool
         if ($number % $i === 0) {
             return false;
         }
-    }    
+    }
     return true;
 }
