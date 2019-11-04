@@ -5,25 +5,18 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-const ROUND_QTY = 3;
-
-function getRoundsQty()
-{
-    return ROUND_QTY;
-}
+const ROUNDS_QTY = 3;
 
 function runEngine(string $rulesMessage, $task)
 {
     line("Welcome to the Brain Games!");
     line($rulesMessage);
     line("");
-    $name = getName();
+    $name = prompt('May i have your name?');
     line("Hello, {$name}!");
-    for ($i = 0; $i < ROUND_QTY; $i++) {
-        $question = $task[$i][0];
-        $correctAnswer = $task[$i][1];
+    foreach ($task as [$question, $correctAnswer]) {
         line("Question: " . $question);
-        $answer = prompt('Your answer: ');
+        $answer = prompt('Your answer ');
         if ($answer === $correctAnswer) {
             line("Correct!");
         } else {
@@ -32,10 +25,6 @@ function runEngine(string $rulesMessage, $task)
             return;
         }
     }
+    
     line("Congratulations, {$name}!");
-}
-
-function getName()
-{
-    return prompt('May i have your name?');
 }

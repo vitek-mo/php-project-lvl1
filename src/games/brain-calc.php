@@ -3,7 +3,7 @@
 namespace BrainGames\Games\BrainCalc;
 
 use function BrainGames\Engine\runEngine;
-use function BrainGames\Engine\getRoundsQty;
+use const BrainGames\Engine\ROUNDS_QTY;
 
 const BRAIN_CALC_RULES = "What is the result of the expression?";
 const MIN_VALUE = 1;
@@ -11,7 +11,7 @@ const MAX_VALUE = 100;
 
 function run()
 {
-    runEngine(BRAIN_CALC_RULES, generateTask(getRoundsQty()));
+    runEngine(BRAIN_CALC_RULES, generateTask(ROUNDS_QTY));
 }
 
 function generateTask($roundsQty)
@@ -24,20 +24,19 @@ function generateTask($roundsQty)
 
 function getQuestionAndAnswer()
 {
-    $operation = rand(1, 3);//ariphmetical operations +,-,*
+    $operations = [" + ", " - ", " * "];
+    $operation = $operations[rand(0, 2)];//ariphmetical operations +,-,*
     $a = rand(MIN_VALUE, MAX_VALUE);
     $b = rand(MIN_VALUE, MAX_VALUE);
+    $result[] = strval($a) . $operation . strval($b);
     switch ($operation) {
-        case 1:
-            $result[] = strval($a) . " + " . strval($b);
+        case " + ":
             $result[] = strval($a + $b);
             break;
-        case 2:
-            $result[] = strval($a) . " - " . strval($b);
+        case " - ":
             $result[] = strval($a - $b);
             break;
-        case 3:
-            $result[] = strval($a) . " * " . strval($b);
+        case " * ":
             $result[] = strval($a * $b);
             break;
     }

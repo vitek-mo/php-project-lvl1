@@ -3,7 +3,7 @@
 namespace BrainGames\Games\BrainProgression;
 
 use function BrainGames\Engine\runEngine;
-use function BrainGames\Engine\getRoundsQty;
+use const BrainGames\Engine\ROUNDS_QTY;
 
 const BRAIN_PROGRESSION_RULES = "What number is missing in the progression?";
 const MIN_VALUE = 1;
@@ -16,7 +16,7 @@ const PROGRESSION_LENGTH = 10;
 
 function run()
 {
-    runEngine(BRAIN_PROGRESSION_RULES, generateTask(getRoundsQty()));
+    runEngine(BRAIN_PROGRESSION_RULES, generateTask(ROUNDS_QTY));
 }
 
 function generateTask($roundsQty)
@@ -27,7 +27,7 @@ function generateTask($roundsQty)
         $hiddenIndex = rand(1, PROGRESSION_LENGTH);
         $question = "";
         
-        for ($j = 1; $j <= 10; $j++) {
+        for ($j = 1; $j <= PROGRESSION_LENGTH; $j++) {
             $question = $question . ($j === $hiddenIndex ? " .." : " " . strval($progressionStart + $step * ($j - 1)));
             if ($j === $hiddenIndex) {
                 $answer = strval($progressionStart + $step * ($j - 1));
