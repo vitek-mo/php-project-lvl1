@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games\BrainProgression;
+namespace BrainGames\games\brain_progression;
 
-use function BrainGames\Engine\runEngine;
+use function BrainGames\engine\runEngine;
 
-use const BrainGames\Engine\ROUNDS_QTY;
+use const BrainGames\engine\ROUNDS_QTY;
 
 const BRAIN_PROGRESSION_RULES = "What number is missing in the progression?";
 const MIN_VALUE = 1;

@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games\BrainPrime;
+namespace BrainGames\games\brain_prime;
 
-use function BrainGames\Engine\runEngine;
+use function BrainGames\engine\runEngine;
 
-use const BrainGames\Engine\ROUNDS_QTY;
+use const BrainGames\engine\ROUNDS_QTY;
 
 const BRAIN_PRIME_RULES = "Answer \"yes\" if geven number is prime. Otherwise answer \"no\".";
 const MIN_VALUE = 1;

@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games\BrainCalc;
+namespace BrainGames\games\brain_calc;
 
-use function BrainGames\Engine\runEngine;
+use function BrainGames\engine\runEngine;
 
-use const BrainGames\Engine\ROUNDS_QTY;
+use const BrainGames\engine\ROUNDS_QTY;
 
 const BRAIN_CALC_RULES = "What is the result of the expression?";
 const MIN_VALUE = 1;

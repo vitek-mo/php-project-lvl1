@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games\BrainEven;
+namespace BrainGames\games\brain_even;
 
-use function BrainGames\Engine\runEngine;
+use function BrainGames\engine\runEngine;
 
-use const BrainGames\Engine\ROUNDS_QTY;
+use const BrainGames\engine\ROUNDS_QTY;
 
 const BRAIN_EVEN_RULES = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 const MIN_VALUE = 1;
