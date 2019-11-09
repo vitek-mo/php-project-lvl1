@@ -7,14 +7,14 @@ use function cli\prompt;
 
 const ROUNDS_QTY = 3;
 
-function runEngine(string $rulesMessage, $task)
+function runEngine(string $ruleMessage, $tasks)
 {
     line("Welcome to the Brain Games!");
-    line($rulesMessage);
+    line($ruleMessage);
     line("");
     $name = prompt('May i have your name?');
     line("Hello, {$name}!");
-    foreach ($task as [$question, $correctAnswer]) {
+    foreach ($tasks as [$question, $correctAnswer]) {
         line("Question: " . $question);
         $answer = prompt('Your answer ');
         if ($answer === $correctAnswer) {

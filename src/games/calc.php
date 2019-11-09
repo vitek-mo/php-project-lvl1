@@ -1,43 +1,45 @@
 <?php
 
-namespace BrainGames\games\brain_calc;
+namespace BrainGames\games\calc;
 
 use function BrainGames\engine\runEngine;
 
 use const BrainGames\engine\ROUNDS_QTY;
 
-const BRAIN_CALC_RULES = "What is the result of the expression?";
+const BRAIN_CALC_RULE = "What is the result of the expression?";
 const MIN_VALUE = 1;
 const MAX_VALUE = 100;
+const OPERATIONS = ["+", "-", "*"];
+
+define ("OPERATIONS_COUNT", count(OPERATIONS) - 1);
 
 function run()
 {
-    runEngine(BRAIN_CALC_RULES, generateTask(ROUNDS_QTY));
+    runEngine(BRAIN_CALC_RULE, generateTasks(ROUNDS_QTY));
 }
 
-function generateTask($roundsQty)
+function generateTasks($roundsQty)
 {
     for ($i = 1; $i <= $roundsQty; $i++) {
-        $entireTask[] = getQuestionAndAnswer();
+        $tasks[] = getQuestionAndAnswer();
     }
-    return $entireTask;
+    return $tasks;
 }
 
 function getQuestionAndAnswer()
 {
-    $operations = [" + ", " - ", " * "];
-    $operation = $operations[rand(0, 2)];//ariphmetical operations +,-,*
+    $operation = OPERATIONS[rand(0, OPERATIONS_COUNT)];//ariphmetical operations +,-,*
     $a = rand(MIN_VALUE, MAX_VALUE);
     $b = rand(MIN_VALUE, MAX_VALUE);
-    $result[] = strval($a) . $operation . strval($b);
+    $result[] = strval($a) . " {$operation} " . strval($b);
     switch ($operation) {
-        case " + ":
+        case "+":
             $result[] = strval($a + $b);
             break;
-        case " - ":
+        case "-":
             $result[] = strval($a - $b);
             break;
-        case " * ":
+        case "*":
             $result[] = strval($a * $b);
             break;
     }

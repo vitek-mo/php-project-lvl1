@@ -1,9 +1,16 @@
 {
     "name": "viktor/php-project-lvl1",
-    "bin": ["bin/brain-even", "bin/brain-calc","bin/brain-gcd","bin/brain-progression","bin/brain-prime"],
+    "bin": [
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-prime"
+    ],
     "description": "Brain games. First project on hexlet in PHP proffession. Started 11.10.2019. vitek.mo@gmail.com",
-    "type": "library",
     "keywords": ["game", "logic", "hexlet", "php", "travis", "codeclimate"],
+    "license": "MIT",
+    "type": "project",
     "authors":
     [
 	    {
@@ -13,17 +20,17 @@
 	    }
     ],
     "scripts": {
-	"phpcs": "phpcs",
-	"phpcbf": "phpcbf"
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf"
     },
     "autoload": {
 	    "files": [
-		   "src/games/brain-even.php",
+		   "src/games/even.php",
 		   "src/engine.php",
-		   "src/games/brain-prime.php",
-		   "src/games/brain-calc.php",
-		   "src/games/brain-gcd.php",
-		   "src/games/brain-progression.php"
+		   "src/games/prime.php",
+		   "src/games/calc.php",
+		   "src/games/gcd.php",
+		   "src/games/progression.php"
 	    ]		    
     },
     "require": {
