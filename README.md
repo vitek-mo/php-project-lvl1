@@ -1,13 +1,16 @@
 <a href="https://codeclimate.com/github/vitek-mo/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/4183019995f4d16ee7f0/maintainability" /></a>
 [![Build Status](https://travis-ci.org/vitek-mo/php-project-lvl1.svg?branch=master)](https://travis-ci.org/vitek-mo/php-project-lvl1)
 # Brain games
-//# php-project-lvl1
-//# Start 11.10.2019
-//# Viktor Moisseyenko
-//# vitek.mo@gmail.com
+<!--
+php-project-lvl1
+Start 11.10.2019
+Viktor Moisseyenko
+vitek.mo@gmail.com
+-->
 
 <br><b>Description</b>
 <br>Set of 5 math games
+<br>
 <br><b>Games list</b>
 <ul>
   <li>brain-calc - find correct answer for ariphmetical operations.
@@ -19,6 +22,7 @@
 
 <b>Installation</b>
 <br> - install from packagist with <i>"composer global require viktor/php-project-lvl1"</i>
+<br>
 <br><b>Play</b>
 <br> - games are installing globally. So just run it with game name.
 
