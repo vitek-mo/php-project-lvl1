@@ -11,7 +11,7 @@ const MIN_VALUE = 1;
 const MAX_VALUE = 100;
 const OPERATIONS = ["+", "-", "*"];
 
-define ("OPERATIONS_COUNT", count(OPERATIONS) - 1);
+define("OPERATIONS_COUNT", count(OPERATIONS) - 1);
 
 function run()
 {
