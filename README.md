@@ -10,6 +10,7 @@ vitek.mo@gmail.com
 
 <br><b>Description</b>
 <br>Set of 5 math games
+<br>
 <br><b>Games list</b>
 <ul>
   <li>brain-calc - find correct answer for ariphmetical operations.
@@ -21,6 +22,7 @@ vitek.mo@gmail.com
 
 <b>Installation</b>
 <br> - install from packagist with <i>"composer global require viktor/php-project-lvl1"</i>
+<br>
 <br><b>Play</b>
 <br> - games are installing globally. So just run it with game name.
 
