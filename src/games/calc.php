@@ -11,7 +11,7 @@ const MIN_VALUE = 1;
 const MAX_VALUE = 100;
 const OPERATIONS = ["+", "-", "*"];
 
-define("OPERATIONS_COUNT", count(OPERATIONS) - 1);
+//define("OPERATIONS_COUNT", count(OPERATIONS) - 1);
 
 function run()
 {
@@ -28,20 +28,22 @@ function generateTasks($roundsQty)
 
 function getQuestionAndAnswer()
 {
-    $operation = OPERATIONS[rand(0, OPERATIONS_COUNT)];//ariphmetical operations +,-,*
+    $answer = "";
+    $operation = OPERATIONS[array_rand(OPERATIONS)]; //ariphmetical operations +,-,*
+    //$operation = OPERATIONS[rand(0, )];
     $a = rand(MIN_VALUE, MAX_VALUE);
     $b = rand(MIN_VALUE, MAX_VALUE);
-    $result[] = strval($a) . " {$operation} " . strval($b);
+    $question = "{$a} {$operation} {$b}";
     switch ($operation) {
         case "+":
-            $result[] = strval($a + $b);
+            $answer = strval($a + $b);
             break;
         case "-":
-            $result[] = strval($a - $b);
+            $answer = strval($a - $b);
             break;
         case "*":
-            $result[] = strval($a * $b);
+            $answer = strval($a * $b);
             break;
     }
-    return $result;
+    return [$question, $answer];
 }

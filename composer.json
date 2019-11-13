@@ -11,30 +11,29 @@
     "keywords": ["game", "logic", "hexlet", "php", "travis", "codeclimate"],
     "license": "MIT",
     "type": "project",
-    "authors":
-    [
-	    {
-		    "name": "Viktor Moisseyenko",
-		    "email": "vitek.mo@gmail.com",
-		    "role": "Developer"
-	    }
+    "authors": [
+        {
+        "name": "Viktor Moisseyenko",
+        "email": "vitek.mo@gmail.com",
+        "role": "Developer"
+        }
     ],
     "scripts": {
         "phpcs": "phpcs",
         "phpcbf": "phpcbf"
     },
     "autoload": {
-	    "files": [
-		   "src/games/even.php",
-		   "src/engine.php",
-		   "src/games/prime.php",
-		   "src/games/calc.php",
-		   "src/games/gcd.php",
-		   "src/games/progression.php"
-	    ]		    
+        "files": [
+            "src/games/even.php",
+            "src/engine.php",
+            "src/games/prime.php",
+            "src/games/calc.php",
+            "src/games/gcd.php",
+            "src/games/progression.php"
+        ]
     },
     "require": {
-	    "wp-cli/php-cli-tools": "*"
+        "wp-cli/php-cli-tools": "*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5"

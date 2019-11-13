@@ -6,13 +6,13 @@ use function BrainGames\engine\runEngine;
 
 use const BrainGames\engine\ROUNDS_QTY;
 
-const BRAIN_EVEN_RUL = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+const BRAIN_EVEN_RULE = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 const MIN_VALUE = 1;
 const MAX_VALUE = 150;
 
 function run()
 {
-    runEngine(BRAIN_EVEN_RUL, generateTasks(ROUNDS_QTY));
+    runEngine(BRAIN_EVEN_RULE, generateTasks(ROUNDS_QTY));
 }
 
 function generateTasks($roundsQty)

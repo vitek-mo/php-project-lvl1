@@ -22,7 +22,7 @@ function generateTasks($roundsQty)
         $number2 = rand(MIN_VALUE, MAX_VALUE);
         $question = strval($number1) . " " . strval($number2);
         $answer = strval(getGCD($number1, $number2));
-        $tasks[] = [$question,$answer];
+        $tasks[] = [$question, $answer];
     }
     return $tasks;
 }

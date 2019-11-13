@@ -20,14 +20,14 @@ function generateTasks($roundsQty)
     for ($i = 1; $i <= $roundsQty; $i++) {
         $question = rand(MIN_VALUE, MAX_VALUE);
         $answer = (isPrime($question)) ? "yes" : "no";
-        $tasks[] = [$question,$answer];
+        $tasks[] = [$question, $answer];
     }
     return $tasks;
 }
 
 function isPrime($number): bool
 {
-    if ($number < 1) {
+    if ($number <= 1) {
         return false;
     }
     

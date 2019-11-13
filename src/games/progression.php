@@ -25,18 +25,16 @@ function generateTasks($roundsQty)
     for ($i = 1; $i <= $roundsQty; $i++) {
         $start = rand(RAND_START, RAND_MAX);
         $step = rand(RAND_STEP_MIN, RAND_STEP_MAX);
-        $hiddenIndex = rand(0, LENGTH - 1); //
+        $hiddenValueIndex = rand(0, LENGTH - 1); //
         $question = "";
         
         for ($j = 0; $j < LENGTH; $j++) {
-//        for ($j = 1; $j <= LENGTH; $j++) {
-            $question = $question . ($j === $hiddenIndex ? " .." : " " . strval($start + $step * $j));
-//            $question = $question . ($j === $hiddenIndex ? " .." : " " . strval($start + $step * ($j - 1)));
-            if ($j === $hiddenIndex) {
+            $question = $question . ($j === $hiddenValueIndex ? " .." : " " . strval($start + $step * $j));
+            if ($j === $hiddenValueIndex) {
                 $answer = strval($start + $step * $j);
             }
         }
-        $tasks[] = [$question,$answer];
+        $tasks[] = [$question, $answer];
     }
     return $tasks;
 }
