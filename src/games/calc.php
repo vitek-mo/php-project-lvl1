@@ -11,8 +11,6 @@ const MIN_VALUE = 1;
 const MAX_VALUE = 100;
 const OPERATIONS = ["+", "-", "*"];
 
-//define("OPERATIONS_COUNT", count(OPERATIONS) - 1);
-
 function run()
 {
     runEngine(BRAIN_CALC_RULE, generateTasks(ROUNDS_QTY));
@@ -30,10 +28,9 @@ function getQuestionAndAnswer()
 {
     $answer = "";
     $operation = OPERATIONS[array_rand(OPERATIONS)]; //ariphmetical operations +,-,*
-    //$operation = OPERATIONS[rand(0, )];
     $a = rand(MIN_VALUE, MAX_VALUE);
     $b = rand(MIN_VALUE, MAX_VALUE);
-    $question = "{$a} {$operation} {$b}";
+    $question = "$a $operation $b";
     switch ($operation) {
         case "+":
             $answer = strval($a + $b);

@@ -29,9 +29,12 @@ function generateTasks($roundsQty)
         $question = "";
         
         for ($j = 0; $j < LENGTH; $j++) {
-            $question = $question . ($j === $hiddenValueIndex ? " .." : " " . strval($start + $step * $j));
+            $currentValue = $start + $step * $j;
             if ($j === $hiddenValueIndex) {
-                $answer = strval($start + $step * $j);
+                $question = ($j === 0 ? ".." : "$question ..");
+                $answer = "$currentValue";
+            } else {
+                $question = "$question $currentValue";
             }
         }
         $tasks[] = [$question, $answer];
